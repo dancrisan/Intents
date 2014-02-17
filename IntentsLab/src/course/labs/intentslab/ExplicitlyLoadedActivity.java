@@ -47,12 +47,13 @@ public class ExplicitlyLoadedActivity extends Activity {
 		Log.i(TAG,"Entered enterClicked()");
 		
 		// TODO - Save user provided input from the EditText field
-
+			String userProvidedInput = mEditText.getText().toString();
 		// TODO - Create a new intent and save the input from the EditText field as an extra
-		
+			Intent newIntent = new Intent();
+			newIntent.putExtra("providedInput", userProvidedInput);
 		// TODO - Set Activity's result with result code RESULT_OK
-		
+			setResult(Activity.RESULT_OK, newIntent);
 		// TODO - Finish the Activity
-
+			finish();
 	}
 }
