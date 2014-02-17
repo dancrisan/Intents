@@ -94,7 +94,7 @@ public class ActivityLoaderActivity extends Activity {
 		startActivity(chooserIntent);
 
 	}
-	//Hello world
+	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
